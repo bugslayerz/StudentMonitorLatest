@@ -1,0 +1,22 @@
+﻿@model IEnumerable<StudentMonitor.LeaveDetail>
+    @{
+    Layout = "";
+}
+
+<h5>Applied Leaves</h5>
+<hr />
+<ul class="list-group">
+    @foreach (var leave in Model)
+    {
+        if (@leave.LeaveStatus == 1)
+        {
+            <li class="list-group-item list-group-item-warning">@(Convert.ToString(leave.LeaveDate) + "-" + leave.LeaveReason)</li>
+        }
+        else
+        {
+            <li class="list-group-item list-group-item-success">@(Convert.ToString(leave.LeaveDate) + "-" + leave.LeaveReason)</li>
+        }
+    }
+</ul>
+
+

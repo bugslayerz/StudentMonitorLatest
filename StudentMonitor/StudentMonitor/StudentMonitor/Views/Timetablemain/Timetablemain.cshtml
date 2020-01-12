@@ -1,0 +1,39 @@
+﻿@model IEnumerable<StudentMonitor.sp_timetable1_Result>
+
+
+@{
+    ViewBag.Title = "Timetablemain";
+
+
+}
+
+@section Scripts
+{
+    <script>
+        
+        $('#drpdwnStandard').change(function () {
+            
+            if ($(this).val() == "") {
+                $('#divTimeTable').html('');
+            }
+            else {
+                $.ajax({
+                    url: "/Timetablemain/TimeTable1",
+                    data: { standard: $(this).val() },
+                    success: function (result) {
+                        $('#divTimeTable').html(result);
+                    }
+                })
+            }
+        });
+    </script>
+}
+
+<h2>Timetablemain</h2>
+
+<p>
+    @Html.Label("Select class:")&nbsp;&nbsp;@Html.DropDownList("drpdwnStandard", new SelectList(Model.Select(x => x.Standard)),"--Select--", new { id = "drpdwnStandard" })
+    <div id="divTimeTable"></div>
+
+</p>
+

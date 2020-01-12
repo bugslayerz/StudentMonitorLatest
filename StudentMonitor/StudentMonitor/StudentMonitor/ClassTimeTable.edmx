@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="StudentModel5.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TimeTable_1">
+          <Key>
+            <PropertyRef Name="Days" />
+          </Key>
+          <Property Name="Standard" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Days" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_1" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_2" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_3" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_4" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_5" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_6" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_7" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TimeTable_2">
+          <Key>
+            <PropertyRef Name="Days" />
+          </Key>
+          <Property Name="Standard" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Days" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_1" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_2" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_3" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_4" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_5" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_6" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_7" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TimeTable_3">
+          <Key>
+            <PropertyRef Name="Days" />
+          </Key>
+          <Property Name="Standard" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Days" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_1" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_2" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_3" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_4" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_5" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_6" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_7" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TimeTable_4">
+          <Key>
+            <PropertyRef Name="Days" />
+          </Key>
+          <Property Name="Standard" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Days" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_1" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_2" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_3" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_4" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_5" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_6" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_7" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TimeTable_5">
+          <Key>
+            <PropertyRef Name="Days" />
+          </Key>
+          <Property Name="Standard" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Days" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_1" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_2" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_3" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_4" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_5" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_6" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="Period_7" Type="varchar" MaxLength="20" Nullable="false" />
+        </EntityType>
+        <Function Name="sp_timetable1" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_timetable2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_timetable3" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_timetable4" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="sp_timetable5" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="StudentModel5StoreContainer">
+          <EntitySet Name="TimeTable_1" EntityType="Self.TimeTable_1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TimeTable_2" EntityType="Self.TimeTable_2" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TimeTable_3" EntityType="Self.TimeTable_3" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TimeTable_4" EntityType="Self.TimeTable_4" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TimeTable_5" EntityType="Self.TimeTable_5" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="StudentModel5" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="TimeTable_1">
+          <Key>
+            <PropertyRef Name="Days" />
+          </Key>
+          <Property Name="Standard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TimeTable_2">
+          <Key>
+            <PropertyRef Name="Days" />
+          </Key>
+          <Property Name="Standard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TimeTable_3">
+          <Key>
+            <PropertyRef Name="Days" />
+          </Key>
+          <Property Name="Standard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TimeTable_4">
+          <Key>
+            <PropertyRef Name="Days" />
+          </Key>
+          <Property Name="Standard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TimeTable_5">
+          <Key>
+            <PropertyRef Name="Days" />
+          </Key>
+          <Property Name="Standard" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Days" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_1" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_2" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_3" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_4" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_5" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_6" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Period_7" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="StudentEntities8" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TimeTable_1" EntityType="Self.TimeTable_1" />
+          <EntitySet Name="TimeTable_2" EntityType="Self.TimeTable_2" />
+          <EntitySet Name="TimeTable_3" EntityType="Self.TimeTable_3" />
+          <EntitySet Name="TimeTable_4" EntityType="Self.TimeTable_4" />
+          <EntitySet Name="TimeTable_5" EntityType="Self.TimeTable_5" />
+          <FunctionImport Name="sp_timetable1" ReturnType="Collection(StudentModel5.sp_timetable1_Result)" />
+          <FunctionImport Name="sp_timetable2" ReturnType="Collection(StudentModel5.sp_timetable2_Result)" />
+          <FunctionImport Name="sp_timetable3" ReturnType="Collection(StudentModel5.sp_timetable3_Result)" />
+          <FunctionImport Name="sp_timetable4" ReturnType="Collection(StudentModel5.sp_timetable4_Result)" />
+          <FunctionImport Name="sp_timetable5" ReturnType="Collection(StudentModel5.sp_timetable5_Result)" />
+        </EntityContainer>
+        <ComplexType Name="sp_timetable1_Result">
+          <Property Type="String" Name="Standard" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Days" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_1" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_2" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_3" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_4" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_5" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_6" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_7" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="sp_timetable2_Result">
+          <Property Type="String" Name="Standard" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Days" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_1" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_2" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_3" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_4" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_5" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_6" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_7" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="sp_timetable3_Result">
+          <Property Type="String" Name="Standard" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Days" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_1" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_2" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_3" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_4" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_5" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_6" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_7" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="sp_timetable4_Result">
+          <Property Type="String" Name="Standard" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Days" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_1" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_2" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_3" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_4" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_5" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_6" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_7" Nullable="false" MaxLength="20" />
+        </ComplexType>
+        <ComplexType Name="sp_timetable5_Result">
+          <Property Type="String" Name="Standard" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Days" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_1" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_2" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_3" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_4" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_5" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_6" Nullable="false" MaxLength="20" />
+          <Property Type="String" Name="Period_7" Nullable="false" MaxLength="20" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="StudentModel5StoreContainer" CdmEntityContainer="StudentEntities8">
+          <EntitySetMapping Name="TimeTable_1">
+            <EntityTypeMapping TypeName="StudentModel5.TimeTable_1">
+              <MappingFragment StoreEntitySet="TimeTable_1">
+                <ScalarProperty Name="Standard" ColumnName="Standard" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Period_1" ColumnName="Period_1" />
+                <ScalarProperty Name="Period_2" ColumnName="Period_2" />
+                <ScalarProperty Name="Period_3" ColumnName="Period_3" />
+                <ScalarProperty Name="Period_4" ColumnName="Period_4" />
+                <ScalarProperty Name="Period_5" ColumnName="Period_5" />
+                <ScalarProperty Name="Period_6" ColumnName="Period_6" />
+                <ScalarProperty Name="Period_7" ColumnName="Period_7" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TimeTable_2">
+            <EntityTypeMapping TypeName="StudentModel5.TimeTable_2">
+              <MappingFragment StoreEntitySet="TimeTable_2">
+                <ScalarProperty Name="Standard" ColumnName="Standard" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Period_1" ColumnName="Period_1" />
+                <ScalarProperty Name="Period_2" ColumnName="Period_2" />
+                <ScalarProperty Name="Period_3" ColumnName="Period_3" />
+                <ScalarProperty Name="Period_4" ColumnName="Period_4" />
+                <ScalarProperty Name="Period_5" ColumnName="Period_5" />
+                <ScalarProperty Name="Period_6" ColumnName="Period_6" />
+                <ScalarProperty Name="Period_7" ColumnName="Period_7" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TimeTable_3">
+            <EntityTypeMapping TypeName="StudentModel5.TimeTable_3">
+              <MappingFragment StoreEntitySet="TimeTable_3">
+                <ScalarProperty Name="Standard" ColumnName="Standard" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Period_1" ColumnName="Period_1" />
+                <ScalarProperty Name="Period_2" ColumnName="Period_2" />
+                <ScalarProperty Name="Period_3" ColumnName="Period_3" />
+                <ScalarProperty Name="Period_4" ColumnName="Period_4" />
+                <ScalarProperty Name="Period_5" ColumnName="Period_5" />
+                <ScalarProperty Name="Period_6" ColumnName="Period_6" />
+                <ScalarProperty Name="Period_7" ColumnName="Period_7" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TimeTable_4">
+            <EntityTypeMapping TypeName="StudentModel5.TimeTable_4">
+              <MappingFragment StoreEntitySet="TimeTable_4">
+                <ScalarProperty Name="Standard" ColumnName="Standard" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Period_1" ColumnName="Period_1" />
+                <ScalarProperty Name="Period_2" ColumnName="Period_2" />
+                <ScalarProperty Name="Period_3" ColumnName="Period_3" />
+                <ScalarProperty Name="Period_4" ColumnName="Period_4" />
+                <ScalarProperty Name="Period_5" ColumnName="Period_5" />
+                <ScalarProperty Name="Period_6" ColumnName="Period_6" />
+                <ScalarProperty Name="Period_7" ColumnName="Period_7" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TimeTable_5">
+            <EntityTypeMapping TypeName="StudentModel5.TimeTable_5">
+              <MappingFragment StoreEntitySet="TimeTable_5">
+                <ScalarProperty Name="Standard" ColumnName="Standard" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Period_1" ColumnName="Period_1" />
+                <ScalarProperty Name="Period_2" ColumnName="Period_2" />
+                <ScalarProperty Name="Period_3" ColumnName="Period_3" />
+                <ScalarProperty Name="Period_4" ColumnName="Period_4" />
+                <ScalarProperty Name="Period_5" ColumnName="Period_5" />
+                <ScalarProperty Name="Period_6" ColumnName="Period_6" />
+                <ScalarProperty Name="Period_7" ColumnName="Period_7" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="sp_timetable1" FunctionName="StudentModel5.Store.sp_timetable1">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="StudentModel5.sp_timetable1_Result">
+                <ScalarProperty Name="Standard" ColumnName="Standard" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Period_1" ColumnName="Period_1" />
+                <ScalarProperty Name="Period_2" ColumnName="Period_2" />
+                <ScalarProperty Name="Period_3" ColumnName="Period_3" />
+                <ScalarProperty Name="Period_4" ColumnName="Period_4" />
+                <ScalarProperty Name="Period_5" ColumnName="Period_5" />
+                <ScalarProperty Name="Period_6" ColumnName="Period_6" />
+                <ScalarProperty Name="Period_7" ColumnName="Period_7" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_timetable2" FunctionName="StudentModel5.Store.sp_timetable2">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="StudentModel5.sp_timetable2_Result">
+                <ScalarProperty Name="Standard" ColumnName="Standard" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Period_1" ColumnName="Period_1" />
+                <ScalarProperty Name="Period_2" ColumnName="Period_2" />
+                <ScalarProperty Name="Period_3" ColumnName="Period_3" />
+                <ScalarProperty Name="Period_4" ColumnName="Period_4" />
+                <ScalarProperty Name="Period_5" ColumnName="Period_5" />
+                <ScalarProperty Name="Period_6" ColumnName="Period_6" />
+                <ScalarProperty Name="Period_7" ColumnName="Period_7" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_timetable3" FunctionName="StudentModel5.Store.sp_timetable3">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="StudentModel5.sp_timetable3_Result">
+                <ScalarProperty Name="Standard" ColumnName="Standard" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Period_1" ColumnName="Period_1" />
+                <ScalarProperty Name="Period_2" ColumnName="Period_2" />
+                <ScalarProperty Name="Period_3" ColumnName="Period_3" />
+                <ScalarProperty Name="Period_4" ColumnName="Period_4" />
+                <ScalarProperty Name="Period_5" ColumnName="Period_5" />
+                <ScalarProperty Name="Period_6" ColumnName="Period_6" />
+                <ScalarProperty Name="Period_7" ColumnName="Period_7" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_timetable4" FunctionName="StudentModel5.Store.sp_timetable4">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="StudentModel5.sp_timetable4_Result">
+                <ScalarProperty Name="Standard" ColumnName="Standard" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Period_1" ColumnName="Period_1" />
+                <ScalarProperty Name="Period_2" ColumnName="Period_2" />
+                <ScalarProperty Name="Period_3" ColumnName="Period_3" />
+                <ScalarProperty Name="Period_4" ColumnName="Period_4" />
+                <ScalarProperty Name="Period_5" ColumnName="Period_5" />
+                <ScalarProperty Name="Period_6" ColumnName="Period_6" />
+                <ScalarProperty Name="Period_7" ColumnName="Period_7" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="sp_timetable5" FunctionName="StudentModel5.Store.sp_timetable5">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="StudentModel5.sp_timetable5_Result">
+                <ScalarProperty Name="Standard" ColumnName="Standard" />
+                <ScalarProperty Name="Days" ColumnName="Days" />
+                <ScalarProperty Name="Period_1" ColumnName="Period_1" />
+                <ScalarProperty Name="Period_2" ColumnName="Period_2" />
+                <ScalarProperty Name="Period_3" ColumnName="Period_3" />
+                <ScalarProperty Name="Period_4" ColumnName="Period_4" />
+                <ScalarProperty Name="Period_5" ColumnName="Period_5" />
+                <ScalarProperty Name="Period_6" ColumnName="Period_6" />
+                <ScalarProperty Name="Period_7" ColumnName="Period_7" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

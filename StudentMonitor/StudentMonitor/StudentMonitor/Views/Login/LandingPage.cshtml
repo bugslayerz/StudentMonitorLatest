@@ -1,0 +1,121 @@
+﻿@model IEnumerable<StudentMonitor.STUDENT>
+@{
+    ViewBag.Title = "LandingPage";
+}
+
+<h2>LandingPage</h2>
+
+
+@{
+    ViewBag.Title = "LandingPage";
+    var grid = new WebGrid(source: Model, canPage: true, canSort: false);
+}
+
+<style>
+    table#t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+    }
+
+        table#t01 tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        table#t01 th {
+            color: white;
+            background-color: blue;
+        }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapes;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+</style>
+
+<fieldset>
+
+
+    @if (@Session["Role"].Equals("1"))
+    {
+        @Html.Label("Welcome Admin") <br />
+        @Html.ActionLink("Register A Student", "RegisterStudent", "Registration");<br />
+        @Html.ActionLink("Register A Teacher", "RegisterTeacher", "Registerteacher");<br />
+        @Html.ActionLink("Approve leaves", "ApproveLeaves", "Leave");<br />
+
+
+    }
+    else if (@Session["Role"].Equals("2"))
+    {
+        @Html.Label("Welcome Teacher")
+        <br />
+        if (Model.Count() > 0)
+        {
+            @grid.GetHtml(
+             htmlAttributes: new { id = "t01" },
+             fillEmptyRows: false,
+             mode: WebGridPagerModes.All,
+             firstText: "<< First",
+             previousText: "< Prev",
+             nextText: "Next >",
+             lastText: "Last >>",
+
+             columns: new[] {
+                grid.Column("SID", "Id"),
+                grid.Column("NAME", "NAME"),
+                grid.Column("STD", "CLASS"),
+                grid.Column("AGE", "AGE"),
+                grid.Column("ADDRESS", "ADDRESS")
+
+
+             }
+             )
+        }
+
+        @Html.ActionLink("View Timetable", "Timetablemain", "Timetablemain");
+        @Html.ActionLink("Apply Leave","Leave", "Login", new { PersonId = Convert.ToString(Session["teacherID"]), PersonName = Convert.ToString(Session["teacherName"]) },null);
+
+    }
+    else if (@Session["Role"].Equals("3"))
+    {
+        @Html.Label("Welcome Parent")
+        if (Model.Count() > 0)
+        {
+            @grid.GetHtml(
+             htmlAttributes: new { id = "t01" },
+             fillEmptyRows: false,
+             mode: WebGridPagerModes.All,
+             firstText: "<< First",
+             previousText: "< Prev",
+             nextText: "Next >",
+             lastText: "Last >>",
+
+             columns: new[] {
+                grid.Column("SID", "Id"),
+                grid.Column("NAME", "NAME"),
+                grid.Column("STD", "CLASS"),
+                grid.Column("AGE", "AGE"),
+                grid.Column("ADDRESS", "ADDRESS"),
+                grid.Column("SID","Apply Leave",format: @<text><a href="@Url.Action("Leave","Login",new{PersonId=item.SID,PersonName=item.NAME })">Apply Leave</a></text>)
+
+
+                                                              })
+                        }
+
+                                @Html.ActionLink("View Timetable", "Timetablemain", "Timetablemain");
+                            }
+
+    </fieldset>
+
